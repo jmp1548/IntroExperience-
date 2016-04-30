@@ -1,0 +1,17 @@
+/*-------------------------------------------------
+SMACSS: VARIABLES
+-------------------------------------------------*/
+/* Colors */
+$color-white: #fff;
+$color-black: #000;
+$color-red: #e85151;
+$color-darkgray: #474747;
+$color-lightgray: #868687;
+
+/* Font */
+$font-OpenSans: 'Open Sans', 'Arial', sans-serif;
+$font-SofiaPro: 'Sofio Pro';
+@font-face {
+  font-family: 'MyWebFont';
+  src: url('fonts/ailerons.otf') format('opentype');
+}

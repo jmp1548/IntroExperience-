@@ -1,0 +1,347 @@
+/* -----------------------------------------------------------------------
+Version: 0.1
+
+SMACSS [Scalable Modular Architecture for CSS]
+Reference: http://smacss.com/
+
+Categorizing:
+1. Base  - Defaults elements, attribute selectors, pseudo-class selectors styling [example: body, form, a]
+2. Layout  - Divide the page into sections [example: header, footer] [prefix: l-]
+3. Modules - Reusable, Modular parts of design [example: sidebar, popup] [prefix: module-]
+4. State - How our module or layouts look in particular state [example: expanded, active] [prefix: is-]
+5. Theme - Look and feel of subcomponent based on theme [example: dark, light] [prefix: theme-]
+6. Pages   - Page specific styles. [prefix: page-]
+----------------------------------------------------------------------- */
+/*-------------------------------------------------
+MASTER: IMPORTING STYLESHEETS
+-------------------------------------------------*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/*-------------------------------------------------
+SMACSS: VARIABLES
+-------------------------------------------------*/
+/* Colors */
+/* Font */
+@font-face {
+  font-family: 'MyWebFont';
+  src: url("fonts/ailerons.otf") format("opentype"); }
+
+/*
+TODO ::
+[] Integrate Bourbon to make use of most mixins - http://bourbon.io/docs/
+*/
+/*-------------------------------------------------
+ MIXIN :: CLEARFIX
+-------------------------------------------------*/
+/*-------------------------------------------------
+ MIXIN :: PIXEL TO EM CONVERTOR
+-------------------------------------------------*/
+/*-------------------------------------------------
+ MIXIN :: BORDER RADIUS
+-------------------------------------------------*/
+/*-------------------------------------------------
+ MIXIN :: TRANSITION
+-------------------------------------------------*/
+/*-------------------------------------------------
+ MIXIN :: BOX SHADOW
+-------------------------------------------------*/
+/*-------------------------------------------------
+ MIXIN :: SCALE - TRANSFORM
+-------------------------------------------------*/
+/*-------------------------------------------------
+ MIXIN :: ROTATE - TRANSFORM
+-------------------------------------------------*/
+/*-------------------------------------------------
+ MIXIN :: FONT STYLE
+-------------------------------------------------*/
+/*-------------------------------------------------
+SMACSS: BASE
+-------------------------------------------------*/
+body {
+  background: #0E0E0F;
+  background-attachment: fixed;
+  height: 100%;
+  color: #ced9e0;
+  font-family: "Open Sans", "Arial", sans-serif; }
+
+h1 {
+  font-family: ailerons;
+  font-size: 50px;
+  color: white;
+  letter-spacing: 8px; }
+
+h2 {
+  font-family: ailerons;
+  font-size: 48px;
+  color: #868687; }
+
+h3 {
+  font-family: ailerons;
+  font-size: 16px;
+  color: #474747;
+  letter-spacing: 3px; }
+
+figcaption {
+  font-family: ailerons;
+  font-size: 20px;
+  color: #868687;
+  text-shadow: 2px 2px 15px #000;
+  letter-spacing: 3px; }
+
+a {
+  color: #474747; }
+
+a:hover {
+  color: #ced9e0; }
+
+/*-------------------------------------------------
+SMACSS: LAYOUT - COMMON
+-------------------------------------------------*/
+header,
+section,
+footer {
+  max-width: 100%;
+  margin: 0 auto; }
+
+/*-------------------------------------------------
+SMACSS: LAYOUT - HEADER
+-------------------------------------------------*/
+.progress {
+  border-top: 2px solid #4E8C73;
+  padding: 10px;
+  position: relative;
+  z-index: 1; }
+
+header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative; }
+  header div {
+    width: 309px; }
+  header .title {
+    text-shadow: 2px 2px 15px #000;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    top: 10px;
+    width: 100%; }
+  header .logo img {
+    width: 300px;
+    margin-top: -150px;
+    z-index: -1; }
+  header .caption {
+    padding-top: 10px;
+    font-size: 14px; }
+  header .icons span {
+    margin-right: 70px; }
+    header .icons span:last-child {
+      margin-right: 40px; }
+    header .icons span img {
+      width: 40px; }
+  header .user-info {
+    position: absolute; }
+    header .user-info h3 {
+      margin-left: 35px;
+      writing-mode: vertical-rl;
+      transform: rotate(180deg);
+      -moz-transform: rotate(180deg);
+      -webkit-transform: rotate(180deg); }
+
+/*-------------------------------------------------
+SMACSS: LAYOUT - SECTION
+-------------------------------------------------*/
+.questionArea {
+  color: #474747;
+  text-align: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .questionArea .underline {
+    margin-top: 15px; }
+
+.auro {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 50px; }
+  .auro .forward {
+    margin-right: 40px; }
+  .auro .back {
+    margin-left: 40px; }
+
+::-webkit-scrollbar {
+  display: none; }
+
+.gallery {
+  overflow-x: auto;
+  overflow-y: hidden;
+  position: fixed;
+  bottom: 0;
+  margin-bottom: 0; }
+  .gallery ul {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+    list-style: none;
+    margin-bottom: -2px; }
+    .gallery ul figure {
+      position: relative;
+      width: 350px; }
+    .gallery ul figcaption {
+      margin-bottom: -3px;
+      text-align: center;
+      position: relative;
+      z-index: 1; }
+
+/*-------------------------------------------------
+SMACSS: LAYOUT - FOOTER
+-------------------------------------------------*/
+footer {
+  color: #474747;
+  font-size: 11px;
+  text-align: center;
+  padding: 10px;
+  width: 100%; }
+
+.underline {
+  background: blue;
+  width: 50px;
+  height: 1px;
+  background: #21e054;
+  /* Old browsers */
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #21e054 0%, #4e8c73 26%, #2c4f3f 99%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #21e054 0%, #4e8c73 26%, #2c4f3f 99%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#21e054', endColorstr='#2c4f3f', GradientType=1);
+  /* IE6-9 */ }
+
+.auro-circle {
+  width: 200px;
+  height: 200px;
+  border: 1px solid #474747;
+  border-radius: 50%; }
+
+.gallery img {
+  width: 350px;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease; }
+
+.gallery figcaption {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  top: 0; }
+
+.gallery figure img {
+  top: 17px; }
+
+.gallery figure.selected img {
+  position: absolute;
+  top: 10px;
+  border-bottom: 7px solid transparent;
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #21e054 0%, #4e8c73 26%, #2c4f3f 99%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #21e054 0%, #4e8c73 26%, #2c4f3f 99%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#21e054', endColorstr='#2c4f3f', GradientType=1);
+  /* IE6-9 */ }
+
+.gallery figure.selected figcaption {
+  color: #4E8C73;
+  top: -6px; }
+
+.back h3 {
+  text-align: right; }
+
+.back img {
+  width: 80px; }
+
+.forward h3 {
+  text-align: left; }
+
+.forward img {
+  width: 80px; }

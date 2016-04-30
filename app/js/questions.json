@@ -1,0 +1,54 @@
+{
+  "Country": {
+    "url": "images/Country/CarrieUnderwood01.png",
+    "caption": "Country"
+  },
+  "Disco": {
+    "url": "images/Disco/ABBA01.png",
+    "caption": "Disco"
+  },
+  "Edm": {
+    "url": "images/EDM/Avicii02.png",
+    "caption": "Edm"
+  },
+  "Folk": {
+    "url": "images/Folk/BobDylan01.png",
+    "caption": "Folk"
+  },
+  "Indie": {
+    "url": "images/Indie/Mumford01.png",
+    "caption": "Indie"
+  },
+  "Jazz": {
+    "url": "images/Jazz/Coltrane01.png",
+    "caption": "Jazz"
+  },
+  "Metal": {
+    "url": "images/Metal/IronMaiden01.png",
+    "caption": "Metal"
+  },
+  "NewWave": {
+    "url": "images/NewWave/B-52s01.png",
+    "caption": "NewWave"
+  },
+  "Pop": {
+    "url": "images/Pop/Beyonce01.png",
+    "caption": "Pop"
+  },
+  "Punk": {
+    "url": "images/Punk/Blink182_01.png",
+    "caption": "Punk"
+  },
+  "Rap": {
+    "url": "images/Rap/BIG01.png",
+    "caption": "Rap"
+  },
+  "Rock": {
+    "url": "images/Rock/ACDC01.png",
+    "caption": "Rock"
+  },
+  "Soul": {
+    "url": "images/Soul/Amy01.png",
+    "caption": "Soul"
+  }
+}
