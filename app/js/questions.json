@@ -1,54 +1,329 @@
 {
-  "Country": {
-    "url": "images/Country/CarrieUnderwood01.png",
-    "caption": "Country"
+  "question1": {
+    "Country": {
+      "url": "images/Country/CarrieUnderwood01.png",
+      "caption": "Country"
+    },
+    "Disco": {
+      "url": "images/Disco/ABBA01.png",
+      "caption": "Disco"
+    },
+    "Edm": {
+      "url": "images/EDM/Avicii02.png",
+      "caption": "Edm"
+    },
+    "Folk": {
+      "url": "images/Folk/BobDylan01.png",
+      "caption": "Folk"
+    },
+    "Indie": {
+      "url": "images/Indie/Mumford01.png",
+      "caption": "Indie"
+    },
+    "Jazz": {
+      "url": "images/Jazz/Coltrane04.png",
+      "caption": "Jazz"
+    },
+    "Metal": {
+      "url": "images/Metal/IronMaiden01.png",
+      "caption": "Metal"
+    },
+    "NewWave": {
+      "url": "images/NewWave/B-52s01.png",
+      "caption": "NewWave"
+    },
+    "Pop": {
+      "url": "images/Pop/Beyonce01.png",
+      "caption": "Pop"
+    },
+    "Punk": {
+      "url": "images/Punk/Blink182_01.png",
+      "caption": "Punk"
+    },
+    "Rap": {
+      "url": "images/Rap/BIG01.png",
+      "caption": "Rap"
+    },
+    "Rock": {
+      "url": "images/Rock/ACDC03.png",
+      "caption": "Rock"
+    },
+    "Soul": {
+      "url": "images/Soul/Amy03.png",
+      "caption": "Soul"
+    }
   },
-  "Disco": {
-    "url": "images/Disco/ABBA01.png",
-    "caption": "Disco"
+
+  "question2": {
+    "Country": {
+      "urls": [
+        "images/Country/CarrieUnderwood01.png",
+        "images/Country/DollyParton02.png",
+        "images/Country/JohnnyCash02.png",
+        "images/Country/TimMcGraw01.png",
+        "images/Country/WillieNelson02.png"
+      ],
+      "captions": [
+        "Carrie Underwood",
+        "Dolly Parton",
+        "Johnny Cash",
+        "Tim McGraw",
+        "Willie Nelson"
+      ],
+      "tag": "Country"
+    },
+    "Disco": {
+      "urls": [
+        "images/Disco/ABBA01.png",
+        "images/Disco/BeeGees01.png",
+        "images/Disco/DonnaSummer02.png",
+        "images/Disco/GloriaGaynor02.png",
+        "images/Disco/KoolTheGang01.png"
+      ],
+      "captions": [
+        "ABBA",
+        "Bee Gees",
+        "Donna Summer",
+        "Gloria Gaynor",
+        "Kool The Gang"
+      ],
+      "tag": "Disco"
+    },
+    "Edm": {
+      "urls": [
+        "images/EDM/Avicii02.png",
+        "images/EDM/DaftPunk02.png",
+        "images/EDM/Diplo02.png",
+        "images/EDM/Kraftwerk02.png",
+        "images/EDM/Skrillex02.png"
+      ],
+      "captions": [
+        "Avicii",
+        "Daft Punk",
+        "Diplo",
+        "Kraftwerk",
+        "Skrillex"
+      ],
+      "tag": "Edm"
+    },
+    "Folk": {
+      "urls": [
+        "images/Folk/BobDylan01.png",
+        "images/Folk/JoniMitchell02.png",
+        "images/Folk/LouReed01.png",
+        "images/Folk/NeilYoung01.png",
+        "images/Folk/PeterPaulMary02.png"
+      ],
+      "captions": [
+        "Bob Dylan",
+        "Joni Mitchell",
+        "Lou Reed",
+        "Neil Young",
+        "Peter Paul Mary"
+      ],
+      "tag": "Folk"
+    },
+    "Indie": {
+      "urls": [
+        "images/Indie/Mumford02.png",
+        "images/Indie/Radiohead02.png",
+        "images/Indie/SonicYouth02.png",
+        "images/Indie/TheSmiths02.png",
+        "images/Indie/TheStroke02.png"
+      ],
+      "captions": [
+        "Mumford and Sons",
+        "Radiohead",
+        "Sonic Youth",
+        "The Smiths",
+        "The Strokes"
+      ],
+      "tag": "Indie"
+    },
+    "Jazz": {
+      "urls": [
+        "images/Jazz/Coltrane04.png",
+        "images/Jazz/EllaFitzgerald02.png",
+        "images/Jazz/FrankSinatra01.png",
+        "images/Jazz/LouisArmstrong01.png",
+        "images/Jazz/MilesDavis02.png"
+      ],
+      "captions": [
+        "Avicii",
+        "Daft Punk",
+        "Diplo",
+        "Kraftwerk",
+        "Skrillex"
+      ],
+      "tag": "Jazz"
+    },
+    "Metal": {
+      "urls": [
+        "images/Metal/IronMaiden01.png",
+        "images/Metal/JudasPriest02.png",
+        "images/Metal/Metallica02.png",
+        "images/Metal/Sabbath03.png",
+        "images/Metal/Slayer02.png",
+        "images/Metal/SoaD01.png"
+      ],
+      "captions": [
+        "Iron Maiden",
+        "Judas Priest",
+        "Metallica",
+        "Black Sabbath",
+        "Slayer",
+        "System of a Down"
+      ],
+      "tag": "Metal"
+    },
+    "NewWave": {
+      "urls": [
+        "images/NewWave/B-52s01.png",
+        "images/NewWave/Blondie01.png",
+        "images/NewWave/DepecheMode02.png",
+        "images/NewWave/Devo02.png",
+        "images/NewWave/DuranDuran01.png"
+      ],
+      "captions": [
+        "B-52s",
+        "Blondie",
+        "Depeche Mode",
+        "Devo",
+        "Duran Duran"
+      ],
+      "tag": "NewWave"
+    },
+    "Pop": {
+      "urls": [
+        "images/Pop/Beyonce01.png",
+        "images/Pop/Britney02.png",
+        "images/Pop/Gaga03.png",
+        "images/Pop/Madonna01.png",
+        "images/Pop/MJ03.png"
+      ],
+      "captions": [
+        "Beyonce",
+        "Britney Spears",
+        "Lady Gaga",
+        "Madonna",
+        "Michael Jackson"
+      ],
+      "tag": "Pop"
+    },
+    "Punk": {
+      "urls": [
+        "images/Punk/Blink182_01.png",
+        "images/Punk/GreenDay03.png",
+        "images/Punk/Ramones03.png",
+        "images/Punk/SexPistols01.png",
+        "images/Punk/TheClash01.png"
+      ],
+      "captions": [
+        "Blink182",
+        "Green Day",
+        "Ramones",
+        "Sex Pistols",
+        "The Clash"
+      ],
+      "tag": "Punk"
+    },
+    "Rap": {
+      "urls": [
+        "images/Rap/BIG01.png",
+        "images/Rap/Kanye02.png",
+        "images/Rap/NWA02.png",
+        "images/Rap/Outkast02.png",
+        "images/Rap/PublicEnemy02.png",
+        "images/Rap/WuTang02.png"
+      ],
+      "captions": [
+        "The Notorious B.I.G",
+        "Kanye West",
+        "N.W.A",
+        "Outkast",
+        "Public Enemy",
+        "Wu-Tang Clan"
+      ],
+      "tag": "Rap"
+    },
+    "Rock": {
+      "urls": [
+        "images/Rock/ACDC03.png",
+        "images/Rock/Beatles02.png",
+        "images/Rock/LedZeppelin02.png",
+        "images/Rock/Motorhead02.png",
+        "images/Rock/PinkFloyd03.png",
+        "images/Rock/Stones01.png"
+      ],
+      "captions": [
+        "ACDC",
+        "Beatles",
+        "Led Zeppelin",
+        "Motorhead",
+        "Pink Floyd",
+        "Rolling Stones"
+      ],
+      "tag": "Rock"
+    },
+    "Soul": {
+      "urls": [
+        "images/Soul/Amy03.png",
+        "images/Soul/Aretha02.png",
+        "images/Soul/MarvinGaye03.png",
+        "images/Soul/Stevie01.png",
+        "images/Soul/Whitney03.png"
+      ],
+      "captions": [
+        "Amy Winehouse",
+        "Aretha Franklin",
+        "Marvin Gaye",
+        "Stevie Wonder",
+        "Whitney Houston"
+      ],
+      "tag": "Soul"
+    }
   },
-  "Edm": {
-    "url": "images/EDM/Avicii02.png",
-    "caption": "Edm"
-  },
-  "Folk": {
-    "url": "images/Folk/BobDylan01.png",
-    "caption": "Folk"
-  },
-  "Indie": {
-    "url": "images/Indie/Mumford01.png",
-    "caption": "Indie"
-  },
-  "Jazz": {
-    "url": "images/Jazz/Coltrane01.png",
-    "caption": "Jazz"
-  },
-  "Metal": {
-    "url": "images/Metal/IronMaiden01.png",
-    "caption": "Metal"
-  },
-  "NewWave": {
-    "url": "images/NewWave/B-52s01.png",
-    "caption": "NewWave"
-  },
-  "Pop": {
-    "url": "images/Pop/Beyonce01.png",
-    "caption": "Pop"
-  },
-  "Punk": {
-    "url": "images/Punk/Blink182_01.png",
-    "caption": "Punk"
-  },
-  "Rap": {
-    "url": "images/Rap/BIG01.png",
-    "caption": "Rap"
-  },
-  "Rock": {
-    "url": "images/Rock/ACDC01.png",
-    "caption": "Rock"
-  },
-  "Soul": {
-    "url": "images/Soul/Amy01.png",
-    "caption": "Soul"
+
+  "question3": {
+    "Art": {
+      "url": "images/Experiences/theart02.png",
+      "caption": "The Art",
+      "border": "35%"
+    },
+    "Experience": {
+      "url": "images/Experiences/theexperience.png",
+      "caption": "The Experience",
+      "border": "70%"
+    },
+    "Performance": {
+      "url": "images/Experiences/theperformance.png",
+      "caption": "The Performance",
+      "border": "40%"
+    },
+    "Personality": {
+      "url": "images/Experiences/thepersonality.png",
+      "caption": "The Personality",
+      "border": "55%"
+    },
+    "Sound": {
+      "url": "images/Experiences/thesound.png",
+      "caption": "The Sound",
+      "border": "85%"
+    },
+    "Stories": {
+      "url": "images/Experiences/thestories.png",
+      "caption": "The Stories",
+      "border": "50%"
+    },
+    "Style": {
+      "url": "images/Experiences/thestyle01.png",
+      "caption": "The Style",
+      "border": "60%"
+    },
+    "Technology": {
+      "url": "images/Experiences/thetechnology.png",
+      "caption": "The Technology",
+      "border": "65%"
+    }
   }
 }

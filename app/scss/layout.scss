@@ -17,6 +17,37 @@ SMACSS: LAYOUT - HEADER
   padding: 10px;
   position: relative;
   z-index: 1;
+  width: 25%;
+}
+
+.logoMain {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  h6 {
+    margin-top: -70px;
+  }
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    img {
+      width: 60%;
+    }
+    .title {
+      text-shadow: 2px 2px 15px #000;
+      text-align: center;
+      width: 100%;
+      position: absolute;
+      left: 0;
+      top: 36%;
+      font-size: 100px;
+      letter-spacing: 25px;
+    }
+  }
 }
 
 header {
@@ -47,6 +78,7 @@ header {
     font-size: 14px;
   }
   .icons {
+    text-align: right;
     span {
       margin-right: 70px;
       &:last-child {
@@ -60,9 +92,9 @@ header {
   .user-info {
     position: absolute;
     h3 {
-      margin-left: 35px;
-      writing-mode: vertical-rl;
-      @include rotate(180deg);
+      margin-left: 40px; 
+      @include rotate(270deg);
+      transform-origin: 102px 108px;
     }
   }
 }
@@ -77,6 +109,7 @@ SMACSS: LAYOUT - SECTION
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin-top: -25px;
   .underline {
     margin-top: 15px;
   }
@@ -86,7 +119,8 @@ SMACSS: LAYOUT - SECTION
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 50px;
+  margin-top: 30px;
+  height: 40vh;
   .forward {
     margin-right: 40px;
   }
@@ -100,13 +134,19 @@ SMACSS: LAYOUT - SECTION
 }
 
 .gallery {
-  overflow-x: auto;
+  overflow-x: scroll;
   overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
   position: fixed;
   bottom: 0;
   margin-bottom: 0;
   ul {
     display: flex;
+    display: -webkit-flexbox;
+    display: -webkit-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    display: -webkit-box;
     flex-wrap: nowrap;
     list-style: none;
     margin-bottom: -2px;
@@ -121,15 +161,4 @@ SMACSS: LAYOUT - SECTION
       z-index: 1;
     }
   }
-}
-/*-------------------------------------------------
-SMACSS: LAYOUT - FOOTER
--------------------------------------------------*/
-
-footer {
-  color: $color-darkgray;
-  font-size: 11px;
-  text-align: center;
-  padding: 10px;
-  width: 100%;
 }

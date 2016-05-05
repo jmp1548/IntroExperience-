@@ -1,17 +1,25 @@
 /*-------------------------------------------------
 SMACSS: BASE
 -------------------------------------------------*/
+
 body {
-  background: #0E0E0F;
+  background: rgba(43, 45, 46, 1);
+  background: -moz-radial-gradient(center, ellipse cover, rgba(43, 45, 46, 1) 0%, rgba(15, 16, 16, 1) 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(43, 45, 46, 1)), color-stop(100%, rgba(15, 16, 16, 1)));
+  background: -webkit-radial-gradient(center, ellipse cover, rgba(43, 45, 46, 1) 0%, rgba(15, 16, 16, 1) 100%);
+  background: -o-radial-gradient(center, ellipse cover, rgba(43, 45, 46, 1) 0%, rgba(15, 16, 16, 1) 100%);
+  background: -ms-radial-gradient(center, ellipse cover, rgba(43, 45, 46, 1) 0%, rgba(15, 16, 16, 1) 100%);
+  background: radial-gradient(ellipse at center, rgba(43, 45, 46, 1) 0%, rgba(15, 16, 16, 1) 100%);
   background-attachment: fixed;
   height: 100%;
   color: #ced9e0;
-  font-family: $font-OpenSans;
+  font-family: $font-Yantramanav;
+  letter-spacing: 2px
 }
 
 h1 {
   @include fontStyle(ailerons, 50px, white);
-  letter-spacing: 8px; 
+  letter-spacing: 8px;
 }
 
 h2 {
@@ -19,12 +27,27 @@ h2 {
 }
 
 h3 {
-  @include fontStyle(ailerons, 16px, $color-darkgray);  
+  @include fontStyle(ailerons, 16px, $color-darkgray);
   letter-spacing: 3px;
 }
 
+h4 {
+  color: #868687;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+h5 {
+ font-size: 12px; 
+}
+
+h6 {
+  font-size: 14px;
+  color: $color-darkgray;
+}
+
 figcaption {
-  @include fontStyle(ailerons, 20px, $color-lightgray);  
+  @include fontStyle(ailerons, 20px, $color-lightgray);
   text-shadow: 2px 2px 15px #000;
   letter-spacing: 3px;
 }
@@ -32,6 +55,7 @@ figcaption {
 a {
   color: $color-darkgray;
 }
+
 a:hover {
-    color: #ced9e0;
+  color: #ced9e0;
 }
