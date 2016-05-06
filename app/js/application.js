@@ -208,10 +208,20 @@ $(document).ready(function () {
     });
     if (page === 1) {
       firstName = $('.text-box').val();
-      $('body').load('../hometown.html');
+      if (firstName != "") {
+        $('body').load('../hometown.html');
+        page++;
+      }
+      page--;
     } else if (page === 2) {
       hometown = $('.text-box').val();
-      $('body').load('../question.html');
+      if (hometown != "") {
+        $('body').load('../question.html', function () {
+          $(".user-info").append("<h3>" + firstName + " " + hometown + "</h3>");
+        });
+        page++;
+      }
+      page--;
     } else if (page === 3) {
       $(".questionArea").load('../question2.html');
       $(".progress").css("width", "55%");
@@ -227,6 +237,7 @@ $(document).ready(function () {
       tags = tags.concat(q1Tags);
       tags = tags.concat(q2Tags);
       tags = tags.concat(q3Tags);
+      console.log(tags, aura);
       $.post("https://jason-loves-boston.herokuapp.com/users", {
         firstName: firstName,
         hometown: hometown,
@@ -240,13 +251,15 @@ $(document).ready(function () {
 
   $('body').on('click', '.back', function () {
     if (page === 1) {
-      $('body').load('../preQuiz.html');
+      $('body').load('../welcome.html');
     } else if (page === 2) {
       $('body').load('../firstName.html');
     } else if (page === 3) {
+      firstName = "";
       $('body').load('../hometown.html');
       q1Tags = [];
     } else if (page === 4) {
+      hometown = "";
       $(".progress").css("width", "25%");
       $(".questionArea").load('../question1.html');
       $(".aura-circle").css("background-image", "linear-gradient(-20deg, transparent, transparent)");
