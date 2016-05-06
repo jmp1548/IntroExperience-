@@ -28,9 +28,9 @@
       "url": "images/Metal/IronMaiden01.png",
       "caption": "Metal"
     },
-    "NewWave": {
+    "New Wave": {
       "url": "images/NewWave/B-52s01.png",
-      "caption": "NewWave"
+      "caption": "New Wave"
     },
     "Pop": {
       "url": "images/Pop/Beyonce01.png",
@@ -149,11 +149,11 @@
         "images/Jazz/MilesDavis02.png"
       ],
       "captions": [
-        "Avicii",
-        "Daft Punk",
-        "Diplo",
-        "Kraftwerk",
-        "Skrillex"
+        "Coltrane",
+        "Ella Fitzgerald",
+        "Frank Sinatra",
+        "Louis Armstrong",
+        "Miles Davis"
       ],
       "tag": "Jazz"
     },
@@ -176,7 +176,7 @@
       ],
       "tag": "Metal"
     },
-    "NewWave": {
+    "New Wave": {
       "urls": [
         "images/NewWave/B-52s01.png",
         "images/NewWave/Blondie01.png",
@@ -191,7 +191,7 @@
         "Devo",
         "Duran Duran"
       ],
-      "tag": "NewWave"
+      "tag": "New Wave"
     },
     "Pop": {
       "urls": [

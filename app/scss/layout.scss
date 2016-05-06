@@ -34,6 +34,7 @@ SMACSS: LAYOUT - HEADER
     justify-content: center;
     align-items: center;
     position: relative;
+    &-pre {}
     img {
       width: 60%;
     }
@@ -53,7 +54,6 @@ SMACSS: LAYOUT - HEADER
 header {
   display: flex;
   align-items: flex-start;
-  justify-content: space-between;
   position: relative;
   div {
     width: 309px;
@@ -92,7 +92,7 @@ header {
   .user-info {
     position: absolute;
     h3 {
-      margin-left: 40px; 
+      margin-left: 40px;
       @include rotate(270deg);
       transform-origin: 102px 108px;
     }
@@ -101,6 +101,18 @@ header {
 /*-------------------------------------------------
 SMACSS: LAYOUT - SECTION
 -------------------------------------------------*/
+
+.main-text {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  text-align: center;
+  span {
+    margin-top: 20px;
+  }
+}
 
 .questionArea {
   color: $color-darkgray;
@@ -115,7 +127,8 @@ SMACSS: LAYOUT - SECTION
   }
 }
 
-.auro {
+.aura,
+.third-break {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -160,5 +173,14 @@ SMACSS: LAYOUT - SECTION
       position: relative;
       z-index: 1;
     }
+  }
+}
+
+.text-field {
+  text-align: center;
+  ::-webkit-input-placeholder {
+    color: $color-darkgray;
+    font-size: 14px;
+    letter-spacing: 2px;
   }
 }

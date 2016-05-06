@@ -16,15 +16,15 @@
   background: linear-gradient(to right, rgba(113, 178, 128, 1) 0%, rgba(19, 78, 94, 1) 100%);
 }
 
-.auro-circle,
-.auro-circle-copy {
+.aura-circle,
+.aura-circle-copy {
   width: 150px;
   height: 150px;
   border-radius: 50%;
   @include transition(all, .2s, ease);
 }
 
-.auro-circle {
+.aura-circle {
   border: 1px solid #474747;
   position: absolute;
 }
@@ -60,6 +60,16 @@
         top: -6px;
       }
     }
+  }
+}
+
+.main-text {
+  line-height: 40px;
+  font-size: 20px;
+  color: $color-lightgray;
+  width: 500px;
+  .button {
+    padding: 0px 25px;
   }
 }
 
@@ -130,6 +140,7 @@
 }
 
 .button {
+  font-size: 20px;
   margin-top: 150px;
   border: 2px solid;
   padding: 10px 25px;
@@ -140,4 +151,22 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   cursor: pointer;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.flex-center {
+  justify-content: center;
+}
+
+.text-box {
+  text-align: center;
+  width: 300px;
+  height: 40px;
+  background: transparent;
+  border: 1px solid $color-darkgray;
+  color: $color-darkgray;
+  font-size: 14px;
 }
