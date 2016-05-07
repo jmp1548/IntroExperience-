@@ -13,6 +13,13 @@
 
 <body>
 
+  <script>
+    window.location.hash = "no-back-button";
+    window.location.hash = "Again-No-back-button";
+    window.onhashchange = function () {
+      window.location.hash = "no-back-button";
+    }
+  </script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
   <script src="js/application.js" type="text/javascript" charset="utf-8"></script>
 </body>

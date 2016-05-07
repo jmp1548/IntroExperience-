@@ -93,8 +93,8 @@ header {
     position: absolute;
     h3 {
       margin-left: 40px;
-      @include rotate(270deg);
-      transform-origin: 102px 108px;
+      @include rotate(90deg);
+      transform-origin: 0 0;
     }
   }
 }

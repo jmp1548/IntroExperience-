@@ -260,11 +260,11 @@ header {
     position: absolute; }
     header .user-info h3 {
       margin-left: 40px;
-      transform: rotate(270deg);
-      -moz-transform: rotate(270deg);
-      -webkit-transform: rotate(270deg);
-      -webkit-transform-origin: 102px 108px;
-              transform-origin: 102px 108px; }
+      transform: rotate(90deg);
+      -moz-transform: rotate(90deg);
+      -webkit-transform: rotate(90deg);
+      -webkit-transform-origin: 0 0;
+              transform-origin: 0 0; }
 
 /*-------------------------------------------------
 SMACSS: LAYOUT - SECTION
@@ -399,8 +399,8 @@ SMACSS: LAYOUT - SECTION
 
 .aura-circle,
 .aura-circle-copy {
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease; }
