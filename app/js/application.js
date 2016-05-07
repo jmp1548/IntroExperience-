@@ -19,7 +19,6 @@ $(document).ready(function () {
 
   var colors = [];
   var glows = [];
-  var radius = [];
 
   var q1Tags = [];
   var q2Tags = [];
@@ -96,6 +95,7 @@ $(document).ready(function () {
 
     var aLength = 0;
     var temp = [];
+    var radius = [];
 
     var set1Num = 0;
     var set2Num = 0;
@@ -196,12 +196,8 @@ $(document).ready(function () {
       $(".aura-circle-copy").css("box-shadow", "0px 0px 20px " + glow);
       glows.push(glow);
     } else if (page === 5) {
-      radius = [];
       $(".aura-circle").css("border-radius", r1 + r2 + " / " + r3);
-      radius.push(r1, r2, r3);
     }
-    console.log(colors, glows, radius);
-
   });
 
   $('body').on('click', '.forward', function () {
@@ -247,9 +243,9 @@ $(document).ready(function () {
       tags = tags.concat(q3Tags);
       aura = aura.concat(colors);
       aura = aura.concat(glows);
-      aura = aura.concat(radius);
-      console.log(firstName, hometown, aura, tags);
-
+      
+      console.log(aura)
+      
       var postBody = {
         firstName: firstName,
         hometown: hometown
