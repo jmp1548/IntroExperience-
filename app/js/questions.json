@@ -8,9 +8,9 @@
       "url": "images/Disco/ABBA01.png",
       "caption": "Disco"
     },
-    "Edm": {
+    "EDM": {
       "url": "images/EDM/Avicii02.png",
-      "caption": "Edm"
+      "caption": "EDM"
     },
     "Folk": {
       "url": "images/Folk/BobDylan01.png",
@@ -85,11 +85,11 @@
         "Bee Gees",
         "Donna Summer",
         "Gloria Gaynor",
-        "Kool The Gang"
+        "Kool and The Gang"
       ],
       "tag": "Disco"
     },
-    "Edm": {
+    "EDM": {
       "urls": [
         "images/EDM/Avicii02.png",
         "images/EDM/DaftPunk02.png",
@@ -104,7 +104,7 @@
         "Kraftwerk",
         "Skrillex"
       ],
-      "tag": "Edm"
+      "tag": "EDM"
     },
     "Folk": {
       "urls": [
@@ -119,7 +119,7 @@
         "Joni Mitchell",
         "Lou Reed",
         "Neil Young",
-        "Peter Paul Mary"
+        "Peter Paul and Mary"
       ],
       "tag": "Folk"
     },
@@ -163,16 +163,14 @@
         "images/Metal/JudasPriest02.png",
         "images/Metal/Metallica02.png",
         "images/Metal/Sabbath03.png",
-        "images/Metal/Slayer02.png",
-        "images/Metal/SoaD01.png"
+        "images/Metal/Slayer02.png"
       ],
       "captions": [
         "Iron Maiden",
         "Judas Priest",
         "Metallica",
         "Black Sabbath",
-        "Slayer",
-        "System of a Down"
+        "Slayer"
       ],
       "tag": "Metal"
     },
@@ -219,7 +217,7 @@
         "images/Punk/TheClash01.png"
       ],
       "captions": [
-        "Blink182",
+        "Blink-182",
         "Green Day",
         "Ramones",
         "Sex Pistols",
@@ -233,16 +231,14 @@
         "images/Rap/Kanye02.png",
         "images/Rap/NWA02.png",
         "images/Rap/Outkast02.png",
-        "images/Rap/PublicEnemy02.png",
-        "images/Rap/WuTang02.png"
+        "images/Rap/PublicEnemy02.png"
       ],
       "captions": [
         "The Notorious B.I.G",
         "Kanye West",
         "N.W.A",
         "Outkast",
-        "Public Enemy",
-        "Wu-Tang Clan"
+        "Public Enemy"
       ],
       "tag": "Rap"
     },
@@ -251,7 +247,6 @@
         "images/Rock/ACDC03.png",
         "images/Rock/Beatles02.png",
         "images/Rock/LedZeppelin02.png",
-        "images/Rock/Motorhead02.png",
         "images/Rock/PinkFloyd03.png",
         "images/Rock/Stones01.png"
       ],
@@ -259,7 +254,6 @@
         "ACDC",
         "Beatles",
         "Led Zeppelin",
-        "Motorhead",
         "Pink Floyd",
         "Rolling Stones"
       ],

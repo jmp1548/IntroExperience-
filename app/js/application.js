@@ -23,7 +23,7 @@ $(document).ready(function () {
 
   var set1 = ["Pop", "Rock", "Soul", "Rap"];
   var set2 = ["Country", "Indie", "Jazz", "Folk", "Disco"];
-  var set3 = ["Punk", "New Wave", "Edm", "Metal"];
+  var set3 = ["Punk", "New Wave", "EDM", "Metal"];
 
   var set1Color = ["", "#e81967", "#b90540", "#ef1882 #720026"];
   var set2Color = ["", "#e7a821", "#d3810c", "#eecf3f #d65202"];
