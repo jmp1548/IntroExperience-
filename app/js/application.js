@@ -1,3 +1,5 @@
+'use strict';
+
 /**================================================
 JS : MY CUSTOM SCRIPTS
 ===================================================*/
@@ -14,6 +16,10 @@ $(document).ready(function () {
   var r1;
   var r2;
   var r3;
+
+  var colors = [];
+  var glows = [];
+  var radius = [];
 
   var q1Tags = [];
   var q2Tags = [];
@@ -52,7 +58,7 @@ $(document).ready(function () {
 
       $.each(curr, function (i, f) {
         if (page === 3) {
-          figure = "<li><figure><figcaption>" + f.caption + "</figcaption><img src=" + f.url + " data-tag= '" + f.caption + "' alt=" + f.caption + " Image></figure></li>"
+          figure = "<li><figure><figcaption>" + f.caption + "</figcaption><img src=" + f.url + " data-tag= '" + f.caption + "' alt=" + f.caption + " Image></figure></li>";
 
           $(".gallery ul").append(figure).show(500);
         } else if (page === 4) {
@@ -88,10 +94,8 @@ $(document).ready(function () {
     r2 = "50%";
     r3 = "50%";
 
-    aLength = 0;
+    var aLength = 0;
     var temp = [];
-
-    var radius = [];
 
     var set1Num = 0;
     var set2Num = 0;
@@ -183,16 +187,20 @@ $(document).ready(function () {
     }
 
     if (page === 3) {
+      colors = []
       $(".aura-circle").css("background-image", "linear-gradient(-20deg, " + color1 + ", " + color2 + ")");
-      aura.push(color1, color2);
+      colors.push(color1, color2);
     } else if (page === 4) {
+      glows = [];
       $(".aura-circle-copy").css("background-color", glow);
       $(".aura-circle-copy").css("box-shadow", "0px 0px 20px " + glow);
-      aura.push(glow);
+      glows.push(glow);
     } else if (page === 5) {
+      radius = [];
       $(".aura-circle").css("border-radius", r1 + r2 + " / " + r3);
-      aura.push(r1, r2, r3);
+      radius.push(r1, r2, r3);
     }
+    console.log(colors, glows, radius);
 
   });
 
@@ -237,12 +245,24 @@ $(document).ready(function () {
       tags = tags.concat(q1Tags);
       tags = tags.concat(q2Tags);
       tags = tags.concat(q3Tags);
-      console.log(tags, aura);
-      $.post("https://jason-loves-boston.herokuapp.com/users", {
+      aura = aura.concat(colors);
+      aura = aura.concat(glows);
+      aura = aura.concat(radius);
+      console.log(firstName, hometown, aura, tags);
+
+      var postBody = {
         firstName: firstName,
-        hometown: hometown,
-        aura: aura,
-        tags: tags
+        hometown: hometown
+      };
+
+      postBody.tags = tags;
+      postBody.aura = ["#222222"];
+
+      $.ajax({
+        type: "POST",
+        url: "http://jason-loves-boston.herokuapp.com/users",
+        data: JSON.stringify(postBody),
+        contentType: "application/json"
       });
     }
     page++;
@@ -253,13 +273,13 @@ $(document).ready(function () {
     if (page === 1) {
       $('body').load('../welcome.html');
     } else if (page === 2) {
+      firstName = "";
       $('body').load('../firstName.html');
     } else if (page === 3) {
-      firstName = "";
+      hometown = "";
       $('body').load('../hometown.html');
       q1Tags = [];
     } else if (page === 4) {
-      hometown = "";
       $(".progress").css("width", "25%");
       $(".questionArea").load('../question1.html');
       $(".aura-circle").css("background-image", "linear-gradient(-20deg, transparent, transparent)");
@@ -272,6 +292,7 @@ $(document).ready(function () {
       q1Tags = [];
       q2Tags = [];
     } else if (page === 5) {
+      glow = [];
       $(".forward h3").html("continue");
       $(".aura-circle").css("border-radius", "50%");
       q2Tags = [];
