@@ -243,16 +243,14 @@ $(document).ready(function () {
       tags = tags.concat(q3Tags);
       aura = aura.concat(colors);
       aura = aura.concat(glows);
-      
-      console.log(aura)
-      
+
       var postBody = {
         firstName: firstName,
         hometown: hometown
       };
 
       postBody.tags = tags;
-      postBody.aura = ["#222222"];
+      postBody.aura = aura;
 
       $.ajax({
         type: "POST",
