@@ -46,7 +46,7 @@ gulp
 └── .gitignore
 ``````````
 
-**Description**
+# Description
 
 The spotlight intro experience walks user through an interactive quiz, where they can customize their prefrences and recieve their aura. Users are guided through three questions, focused around their favorite genres, artists, and muscial aspects. Throughout this process, and "aura" is being formed: changing colors, glowing, and changing shape 
 
