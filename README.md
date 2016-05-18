@@ -31,10 +31,7 @@ gulp
 │   ├── css
 │   │   └── master.css
 │   ├── scss
-│   │   └── modules
-│   │   │   └── module-name.scss
-│   │   └── pages
-│   │   │   └── page-landing.scss
+│   │   └── modules.scss
 │   │   └── base.scss
 │   │   └── layout.css
 │   │   └── mixins.css
@@ -48,3 +45,12 @@ gulp
 ├── .gitattributes
 └── .gitignore
 ``````````
+
+**Description**
+
+The spotlight intro experience walks user through an interactive quiz, where they can customize their prefrences and recieve their aura. Users are guided through three questions, focused around their favorite genres, artists, and muscial aspects. Throughout this process, and "aura" is being formed: changing colors, glowing, and changing shape 
+
+**Aura**
+
+An aura is essentailly a circle that is created through user interactions and prefrences. Each step of the quiz manipulates this circle. Aura data is then sent to the server, to be used later in the museum and the exit experience.
+
