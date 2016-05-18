@@ -1,10 +1,7 @@
 {
-  "name": "intro",
+  "name": "Spotlight-Intro",
   "version": "0.0.1",
-  "description": "Application description goes here",
-  "scripts": {
-    "start": "node ./server"
-  },
+  "description": "spotlight intro screens",
   "licenses": "enter your license type here",
   "repository": "your repository url goes here",
   "devDependencies": {

@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-# intro
+# Spotlight-Intro
 
 **Project Setup**
 
@@ -10,28 +9,10 @@
 *Type below commands in terminal*
 
 ```````
-npm install -g yo
-
-npm install -g gulp
+npm install
 ```````
 
-### Install [smacss generator](https://github.com/FuelFrontend/generator-smacss)
-
-*Type below commands in terminal*
-
-```````
-npm install -g generator-smacss
-```````
-
-**Clone the repo & cd into it**
-
-
-```````
-sudo npm install
-
-```````
-
-**Finally**
+**To Run**
 
 *Type below command in terminal*
 
@@ -67,6 +48,3 @@ gulp
 ├── .gitattributes
 └── .gitignore
 ``````````
-=======
-# IntroExperience-
->>>>>>> 1d5d0cd6f089fa2cba02fec53135f6d4e72bf92d
